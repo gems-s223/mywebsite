@@ -22,9 +22,9 @@ JOBS = [
     {
         'id': 3,
         'title': 'Machine Learning Engineer',
-        'company': 'Amazon',
-        'location': 'Seattle, WA',
-        'salary': 'USD 110,000',
+        'company': 'Gojek',
+        'location': 'Jakarta, Indonesia',
+        'salary': 'USD 150,000',
         'description': 'Work on the Amazon e-commerce platform'
     }
 ]
