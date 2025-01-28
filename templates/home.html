@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sardi's Careers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #banner {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+        h1 {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="text-center mt-2 mb-4">
+            {{company_name}} Careers
+        </h1>
+    </header>
+
+    <!-- Banner -->
+    <section>
+        <img id="banner" src="../static/banner.jpg" alt="Sardian Banner">
+    </section>
+
+    <!-- About Section -->
+    <section class="container my-5">
+        <h2 class="text-center text-secondary">About Sardian</h2>
+        <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sapiente ipsam unde quod temporibus libero deleniti debitis natus nobis. Minima, qui aliquam. Deleniti architecto ducimus quia laudantium neque. Consequuntur, est?
+        </p>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="container my-5">
+        <h2 class="text-center text-secondary mb-4">Open Positions</h2>
+        <p>
+            {% for job in jobs %}
+                {% include 'jobitem.html' %}
+            {% endfor %}
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="text-center my-5">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+        <p class="mb-0">&copy; 2025, Sardi</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
